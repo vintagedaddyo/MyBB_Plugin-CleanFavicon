@@ -66,7 +66,7 @@ function cleanfavicon_activate()
        		
 	require '../inc/adminfunctions_templates.php';
 	
-	$query  = $db->simple_select("settinggroups","COUNT(*) as rows");
+	$query  = $db->simple_select("settinggroups","COUNT(*) as `rows`");
 	
 	$drows   = $db->fetch_field($query,"rows");
 	
